@@ -1,14 +1,4 @@
 class Product < ActiveRecord::Base
-
-	def self.method
-	end
-
-### prototype methods
-
-
-	def thing
-		@stuff = 1
-	end
-
-
+	validates :description, :name, presence: true 
+	validates :price_in_cents, numericality: {only_integer: true}
 end
