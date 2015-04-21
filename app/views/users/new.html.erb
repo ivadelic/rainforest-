@@ -11,7 +11,7 @@
 			</ul>
 		</div>
 	<% end %> 
-	
+
 	<div class="field">
 		<%= f.label :email %><br/> 
 		<%= f.text_field :email %> 
@@ -26,3 +26,5 @@
 	</div>
 	<div class="actions"><%= f.submit %></div>
 <% end %> 
+
+<%= link_to "Already have an account? Log in.", "/sessions/new" %> 
