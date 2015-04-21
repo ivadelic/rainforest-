@@ -1,3 +1,6 @@
 class User < ActiveRecord::Base
 	has_secure_password
+	# att_accessor :password, :password_confirmation 
+	# these are part of the has_secure_password
+	# validate :password, confirmation: true 
 end
