@@ -4,5 +4,3 @@
 <% @products.each do |product| %> 
 <p> <%= link_to product.name, "/products/#{product.id}" %> <%= product.description %> <%= product.formatted_price %></p>
 <% end %> 
-
-<%= link_to "Sign up", "/users/new" %> | <%= link_to "Log in", "/sessions/new" %>  	 
