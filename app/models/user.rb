@@ -3,4 +3,6 @@ class User < ActiveRecord::Base
 	# att_accessor :password, :password_confirmation 
 	# these are part of the has_secure_password
 	# validate :password, confirmation: true 
+	has_many :reviews
+	has_many :products, through: :reviews
 end
